@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Consulta</title>
+    <link rel="stylesheet" type="text/css" href="marcar.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</style>    
+</head>
+<body>
+    <header>
+        <img src="logo2.png" alt="Minha logo" class="logo">
+    </header>
+    <nav>
+        <ul class="menu">
+            <li class="menu-p">
+                <a href="index.html" class="links">Início</a>
+            </li>
+            <li class="menu-p">
+                <a href="sobre.html" class="links">Sobre o autor</a>
+            </li>
+            <li class="menu-p">
+                <a href="detalhes.html" class="links">Conheça nossos médicos</a>
+            </li>
+            <li class="menu-p">
+                <a href="marcar.html" class="links">Marcar consulta</a>
+            </li>   
+            <li class="menu-p">
+                <a href="#" class="links">Administração</a>
+                <ul>
+                    <li><a href="usuarios.html" class="links">Usuarios</a></li>
+                    <li><a href="consultas.html" class="links">Consultas</a></li>
+                </ul>
+            </li>
+            <li class="menu-p">
+                <a href="fale.html" class="links">Fale Conosco</a>
+            </li>
+        </ul>
+    </nav>
+    <h1><font color="#512079">Marcar Consulta</font></h1>
+    <form action="index.html" method="post">
+        <div>
+            <label for="nome">Nome completo:<br></label>
+            <input type="text" required="" id="nome" />
+        </div>           
+        <div>
+            <label for="email">E-mail:<br></label>
+            <input type="email" id="email" required="" placeholder="seunome@gmail.com"/>
+        </div>
+        <div>
+            <label for="medico">Médico:<br></label>  
+            <select name="medic" required="" id="medico"> 
+                <option value="" disabled selected>Escolha um médico</option>
+                <option value="luc">Doutor Lucas Menezes</option> 
+                <option value="day">Doutora Dayane Costa</option> 
+                <option value="day">Doutor Mário Duarte</option> 
+                <option value="day">Doutora Leticia Garcia</option> 
+            </select>
+            <p style="color:rgb(63, 65, 65)">Não sabe a área de cada médico? <a style="color:rgb(88, 90, 90)" href="detalhes.html">Clique aqui</a></p>
+        </div> 
+        <div>
+            <label for="msg">Caso:<br></label>
+            <textarea id="msg" placeholder="Descreva aqui a situação do paciente"></textarea>
+        </div>
+        <div class="button"><br>
+            <button style="background-color:rgb(154, 100, 185); border-color:rgb(76, 11, 105); color:white" type="submit">Marcar</button>
+        </div>
+    </form>
+    <footer>
+        <br>
+        Desenvolvido por <a href="sobre.html">Nicole</a>
+    </footer>
+</body>
+</html>
