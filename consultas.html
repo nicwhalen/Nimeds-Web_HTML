@@ -34,6 +34,68 @@
             </li>
         </ul>
     </nav>
+    <form method="post">
+        <div>
+            <label for="nome">Nome completo:<br></label>
+            <input type="text" required="" id="nome" autocomplete="off"/>
+        </div>
+        <div>
+            <label for="cpf">CPF:<br></label>
+            <input type="text" required="" id="cpf" autocomplete="off"/>            
+        </div>
+        <div>
+            <label for="data">Data de nascimento:<br></label>
+            <input type="date" required="" id="data"/>
+        </div>            
+        <div>
+            <label for="email">E-mail:<br></label>
+            <input type="email" id="email" required="" placeholder="paciente@gmail.com" autocomplete="off"/>
+        </div>
+        <div class="button"><br>
+            <button style="background-color:rgb(154, 100, 185); border-color:rgb(76, 11, 105); color:white" type="submit">Cadastrar</button>
+        </div>
+    </form>
+    <br>
+    <h3><font color="#512079">Pessoas cadastradas</font></h3>
+    <table border="2" bordercolor=purple>
+        <tr>
+            <th>Nome</th>
+            <th>Dia da consulta</th>
+            <th>Horário da consulta</th>
+            <th>Doutor(a)</th>
+            <th>Ações</th>
+        </tr>
+        <tr>
+            <td>Maria Assunção Costa</td>
+            <td>05/11/2021</td>
+            <td>07:30</td>
+            <td>Leticia Garcia</td>
+            <td>
+               <a href="#">Apagar</a>
+               <a href="#">Editar</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>Antoni Silveira Neves</td>
+            <td>06/11/2021</td>
+            <td>13:30</td>
+            <td>Lucas</td>
+            <td>
+               <a href="#">Apagar</a> 
+               <a href="#">Editar</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>Janiele Moura da Silva</td>
+            <td>06/11/2021</td>
+            <td>14:50</td>
+            <td>Lucas</td>
+            <td>
+               <a href="#">Apagar</a> 
+               <a href="#">Editar</a> 
+            </td>
+        </tr>
+    </table>    
     <footer>
         <br>
         Desenvolvido por <a href="sobre.html">Nicole</a>
